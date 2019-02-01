@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DMZ Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="preheader" id="preheader">
+        <div class="phone"><img src="img/phone.png" alt="Phone" id="img1">
+            <a href="tel:+390123456789">+39012345678</a>  
+        </div>
+        <div class="mail"><img src="img/email.png" alt="Mail" id="img2">
+            <a href="mailto:info@dmztechnology.it">info@dmztechnology.it</a> 
+        </div>
+    </div>
+    
+    <div class="navbar" id="navbar">
+        <div class="logo"></div>
+        <div class="menu">
+                <ul>
+                    <li><a href="#header" >Home</a></li>
+                    <li><a href="#section1">Contatti</a></li>
+                    <li><a href="#section2">Storia</a></li>
+                    <li><a href="#section3">Text 4</a></li>
+                </ul>
+            </div>
+        
+            <div class="toggle" id="toggle">
+            <ul class="burger" id="burger"> 
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul> 
+        </div> 
+        </div>   
+
+
+    <div class="coverheader"></div>
+    <div class="header">
+        <div class="firsttext">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+            <a href="#" class="button_pr">Link Button</a>
+        </div> 
+    </div>
+
+
+    <div class="pageProdotti">
+		<h1>I nostri prodotti</h1>
+		<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit!Lorem, ipsum dolor sit amet consectetur adipisicing elit 
+			<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit 
+		</h2>
+		<div class="row">
+  			<div class="column">
+				<div class="imageProduct" id="pr1"></div>
+  			</div>
+  			<div class="column">
+				<div class="imageProduct" id="pr2"></div>
+  			</div>
+  			<div class="column">
+				<div class="imageProduct" id="pr3"></div>
+  			</div>
+		</div>
+	</div>
+
+
+
+    <div class="responsiveMenu" id="menuResp">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contatti</a></li>
+            <li><a href="">Storia</a></li>
+            <li><a href="">Text 4</a></li>
+        </ul>
+    </div>
+
+
+    
+
+    <div class="rightSquares">
+            <ul id="rightSquares">
+                <li class="li"><a href="#header"></a></li>
+                <li class="li"><a href="#section1"></a></li>
+                <li class="li"><a href="#section2"></a></li>
+                <li class="li"><a href="#section3"></a></li>
+            </ul>
+        </div>
+
+</body>
+
+<!--navbarScrollColor-->
+<script>
+    window.onscroll = function() { navbarScroll(); preHeaderScroll();};
+    function navbarScroll(){
+    var element = document.getElementById("navbar");
+        if(window.pageYOffset > 50){
+            if (element.className == "navbar"){
+                element.className += " scrolledNav";
+            }   
+            else{
+                return element;
+            }  
+        }
+        else{
+            element.className = "navbar";
+        }
+        console.log(window.pageYOffset);
+    } 
+</script>
+
+<!--preHeaderHiddenScroll-->	
+<script>
+    function preHeaderScroll(){
+        var element = document.getElementById("preheader");
+            if(window.pageYOffset > 40){
+                if (element.className == "preheader"){
+                    element.className += " scrolledPreHeader";
+                }   
+                else{
+                    return element;
+                }  
+            }
+            else{
+                element.className = "preheader";
+            }
+            console.log(window.pageYOffset);
+    } 
+</script>
+
+ <!--burgerMenu-->
+<script>
+    var toggle = document.getElementById("burger");
+    toggle.onclick = function() {open()};
+    function open(){
+        var element = document.getElementById("burger");
+        var menu = document.getElementById("menuResp");
+        if (element.className == "burger"){
+            element.className += " open";
+            menu.className += " active";
+        }
+        else{
+            element.className = "burger";
+            menu.className = "responsiveMenu";
+        }
+    }
+</script>
+</html>
