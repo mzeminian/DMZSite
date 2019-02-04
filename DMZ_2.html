@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DMZ Technology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"/>
-
+	
 </head>
 <body>
 
@@ -27,8 +26,8 @@
         <div class="logo"></div>
         <div class="menu">
                 <ul>
-                    <li><a href="#header" >Home</a></li>
-                    <li><a href="#section1">Contatti</a></li>
+                    <li><a href="#preheader" >Home</a></li>
+                    <li><a href="#products">Prodotti</a></li>
                     <li><a href="#section2">Storia</a></li>
                     <li><a href="#section3">Text 4</a></li>
                 </ul>
@@ -48,51 +47,136 @@
     <div class="header">
         <div class="firsttext">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
-            <a href="#" class="button_pr">Link Button</a>
+            <a href="#" class="button">Link Button</a>
         </div> 
     </div>
 
 
-    <div class="pageProdotti">
+    <div class="pageProdotti" id="products">
 		<h1>I nostri prodotti</h1>
-		<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit!Lorem, ipsum dolor sit amet consectetur adipisicing elit 
-			<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit 
+		<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit! 
 		</h2>
 		<div class="row">
   			<div class="column">
-				<div class="imageProduct" id="pr1"></div>
+                <div class="imageProduct" id="pr1"></div>
+                <h3>TITOLO PRODOTTO</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
   			</div>
   			<div class="column">
-				<div class="imageProduct" id="pr2"></div>
+                <div class="imageProduct" id="pr2"></div>
+                <h3>TITOLO PRODOTTO</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
   			</div>
   			<div class="column">
-				<div class="imageProduct" id="pr3"></div>
+                <div class="imageProduct" id="pr3"></div>
+                <h3>TITOLO PRODOTTO</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
   			</div>
 		</div>
 	</div>
+	
+	<div class="products">
+		<div class="row">
+  			<div class="autColumn" id="autColumn1">
+  			</div>
+			<div class="autColumn" id="autColumn2">
+				<div class="textProducts" id="prodotto1">
+					<h1>TITLE TEXT</h1>
+					<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem blanditiis voluptatum quos hic, mollitia quam eveniet obcaecati provident a repellendus labore reprehenderit architecto in natus, quia quasi aut. Molestias!</h2>
+					<a href="#" class="button">Link Button</a>
+				</div>
+  			</div>
+		</div>
+		<!--<div class="row">
+  			<div class="autColumn" id="autColumn3">
+				<div class="textProducts">
+					<h1>TITLE TEXT</h1>
+					<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
+					<a href="#" class="button">Link Button</a>
+				</div>
+  			</div>
+			<div class="autColumn" id="autColumn4">
+				
+  			</div>
+		</div>-->
+		
+	</div>
+  
+    <div class="footer">
+        <div class="row">
+            <div class="footerColumn">
+                <h1>DMZ TECHNOLOGY</h1>
+                <h2>
+                    <strong>P.IVA</strong>
+                     030404012032
+                    <br>
+                    <strong>REA</strong>
+                     212424
+                    <br>
+                    <strong>CODICE SDI</strong>
+                     M5MCSM43
+                    <br>
+                </h2>
+                <a href="">Privacy policy</a>
+            </div>
+            <div class="footerColumn">
+                <h1>&nbsp</h1>
+                <h2>
+                    <div class="positionFooter"><img src="img/mapsIcon.png" alt="Phone" id="img1">
+                        <textFooter id="textFooter">Via Perara 131, Orgiano, Vicenza, Italia</textFooter>  
+                    </div>
+                    <div class="orariFooter"><img src="img/orariIcon.png" alt="Phone" id="img1">
+                        <textFooter id="textFooter">Lun-Ven | 8:30-13:00 | 14:30-18:00</textFooter>  
+                    </div>
+                    <div class="phoneFooter"><img src="img/phoneB.png" alt="Phone" id="img1">
+                        <a href="tel:+390123456789" id="textFooterLink">+39012345678</a>  
+                    </div>
+                    <div class="mailFooter"><img src="img/mailB.png" alt="Phone" id="img1">
+                        <a href="mailto:info@dmztechnology.it" id="textFooterLink">info@dmztechnology.it</a>  
+                    </div>
+                </h2>
+            </div>
+            <div class="footerColumn">
+                <div class="mappa"><a href="https://goo.gl/maps/FG6rSGKBHPQ2" target="_blank"><img src="img/mappa.jpg" alt="Mappa"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="DMZCopyright">
+            <p>© 2019 DMZ Technology, all rights reserved.</p>
+        </div>
+        <div class="linkCopyright">
+                <a href="">Area Clienti</a>
+                <a href="" id="ZMDesign">Designed by ZM Design</a>
+            </div>
+    </div>
+    
+
+
+
 
 
 
     <div class="responsiveMenu" id="menuResp">
         <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">Contatti</a></li>
+            <li><a href="">Prodotti</a></li>
             <li><a href="">Storia</a></li>
-            <li><a href="">Text 4</a></li>
+            <li><a href="">Contattaci</a></li>
         </ul>
     </div>
-
-
-    
-
-    <div class="rightSquares">
+	    
+    <!--<div class="rightSquares">
             <ul id="rightSquares">
                 <li class="li"><a href="#header"></a></li>
                 <li class="li"><a href="#section1"></a></li>
                 <li class="li"><a href="#section2"></a></li>
                 <li class="li"><a href="#section3"></a></li>
             </ul>
-        </div>
+        </div>-->
 
 </body>
 
@@ -112,7 +196,7 @@
         else{
             element.className = "navbar";
         }
-        console.log(window.pageYOffset);
+        console.log("lol "+window.pageYOffset);
     } 
 </script>
 
@@ -120,7 +204,7 @@
 <script>
     function preHeaderScroll(){
         var element = document.getElementById("preheader");
-            if(window.pageYOffset > 40){
+            if(window.pageYOffset > 50){
                 if (element.className == "preheader"){
                     element.className += " scrolledPreHeader";
                 }   
@@ -151,5 +235,7 @@
             menu.className = "responsiveMenu";
         }
     }
-</script>
+</script>	
+	
+
 </html>
