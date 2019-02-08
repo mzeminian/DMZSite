@@ -3,8 +3,37 @@ body,html {
     margin: 0;
     padding: 0;
 	height: 100%;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+}
+
+
+.scrolltotop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #035096;
+    z-index: 5000;
+    left: auto;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+.chevronUp {
+    border-left: 2px solid #EFAB1F;
+    border-top: 2px solid #EFAB1F;
+    width: 10px; height: 10px;
+    transform: rotate(45deg);
+    margin: 22px auto;
+    cursor: pointer;
+}
+
+.scrolltotop:hover {
+    opacity: 1;    
 }
 
 
@@ -80,28 +109,26 @@ body,html {
 
 /*--------HEADER---------*/
 
+
 .header {
     width: 100%;
     height: 600px;
-    background: url(img/bg_header.jpg) no-repeat center center fixed;
     position: relative;
+    background: url(img/bg_header5.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px #00000085;
+    /*box-shadow: inset 0 0 0 1000px #00000085;*/
 }
 
 .firsttext{
-    width: 90%;
+    width: 40%;
     height: 300px;
-    top: 35%;
-    margin-left: auto;
+    top: 20%;
+    margin-left: 20px;
     margin-right: auto;
     position: relative;
-	-webkit-animation-name: fadeInUp;
-  	animation-name: fadeInUp;
-	animation-duration: 2s;
 }
 
 .firsttext p{
@@ -110,18 +137,18 @@ body,html {
     max-width: 70%;
     margin: auto;
    /*color: #035096;*/
-	color: #fff;
-    text-shadow: 1px 1px 1px #495866;
+	color: #035096;
+   /* text-shadow: 1px 1px 1px #495866;*/
     
 }
 
 .button {
     background-color: transparent ;
     /*color: #035096;*/
-	color: #fff;
+	color: #035096;
     width: 140px;
     padding: 12px 0px;
-    border: 2px solid #fff;
+    border: 2px solid #035096;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -134,9 +161,20 @@ body,html {
 .button:hover {
     color: #103754;
     background: rgba(255, 170, 1, 0.733);
-    border: 2px solid #fff;
+    border: 2px solid #035096;
     /*-webkit-box-shadow: 1px 1px 1px #103754;
 			box-shadow: 1px 1px 1px #103754;*/
+}
+
+
+.chevron {
+    border-right: 2px solid #035096;
+    border-bottom: 2px solid #035096;
+    width: 30px; height: 30px;
+    transform: rotate(-225deg);
+    margin: 20px auto;
+    cursor: pointer;
+    animation: pulse 2s infinite;
 }
 
 
@@ -145,20 +183,20 @@ body,html {
 .navbar {
     height: 100px;
     width: 100%;
-    background: #fff;
-    position: fixed;
+    background: transparent;
+    position: relative;
     z-index: 90;
     transition: 0.3s;
 }
 
-.scrolledNav {
+/*.scrolledNav {
     background-color: #c8c8c8cc;
     transition: 0.3s;
-    /*box-shadow: 0px 3px 5px #EFAB1F;*/
+    /*box-shadow: 0px 3px 5px #EFAB1F;
     border-bottom: 2px solid #EFAB1F;
     top: 0px;
 }
-
+*/
 
 .logo {
     height: 100px;
@@ -176,7 +214,7 @@ body,html {
 .menu {
 	position: absolute;
     height: 100px;
-    width: 500px;
+    width: auto;
     right: 125px;
     float: right;
 }
@@ -246,11 +284,11 @@ body,html {
 }
 
 .column > .imageProduct {
-	margin: 0px auto;
+	margin: 0 auto;
 	width: 250px;
     height: 250px;
-    border-radius: 100%;
     transition: 0.3s;
+    border-radius: 100%;
     /*-webkit-animation-name: fadeInUp;
   	animation-name: fadeInUp;
 	animation-duration: 2s;*/
@@ -265,7 +303,6 @@ body,html {
 }
 
 .column #pr2 {
-	border-radius: 100%;
 	background: url(img/img2.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -274,7 +311,6 @@ body,html {
 }
 
 .column #pr3 {
-	border-radius: 100%;
 	background: url(img/img3.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -318,14 +354,14 @@ body,html {
 
 
 
-/*---------Prodotti--------*/
+/*---------Sezione 2--------*/
 
-.products{
+.section2{
     height: 500px;
     width: 90%;
     position: relative;
     background: #fff;
-    margin: 0 auto;
+    margin: 50px auto;
     
 }
 
@@ -409,7 +445,194 @@ body,html {
     border: 2px solid #EFAB1F;
 }
 
-#prodotto1 h2:hover{ color: #035096; }
+/*---------Sezione 3--------*/
+
+.section3{
+    height: 800px;
+    width: 100%;
+    position: relative;
+    margin: 50px 0; 
+}
+
+.chisiamo{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: #f4f6f7;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.obbiettivi{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background: transparent;
+}
+
+.chisiamo h1{
+	text-align: center;
+	font-weight: 700;
+	font-size: 240%;
+	padding-top: 30px;
+	margin: 0;
+	color: #035096;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;	
+}
+
+.chisiamo h2{
+    text-align: left;
+    font-weight: 300;
+	font-size: 200%;
+    margin: 30px 150px;
+    letter-spacing: 5px;
+    font-style: italic;
+	color: #717171;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.chisiamo strong {
+    color: #EFAB1F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 130%;
+}
+
+.chisiamo h3 {
+    text-align: left;
+	font-size: 95%;
+    margin: 30px 150px;
+    font-weight: 400;
+    color: #717171;
+}
+
+#leftColumn {
+    margin: 0 auto;
+}
+#rightColumn {
+    margin: 0 auto;
+}
+
+#leftColumn h1{
+    text-align: left;
+	font-weight: 700;
+	font-size: 300%;
+    margin: 30px 150px 5px;
+    letter-spacing: 3px;
+    color: #035096;
+}
+
+.imgTask{
+    margin: 0 264px;
+    width: 40px;
+    height: 40px;
+}
+.imgTask img{
+    height: 40px;
+}
+
+#leftColumn h2{
+    text-align: left;
+	font-size: 95%;
+    margin: 5px 150px;
+    font-weight: 400;
+    color: #717171;
+    max-width: 40%;
+}
+
+#leftColumn a{
+    text-align: left;
+    margin: 30px 150px;
+    font-size: 90%;
+    text-decoration: underline;
+    font-style: italic;
+    color: #000;
+    transition: 0.3s;
+    display: none;
+}
+
+#leftColumn a:hover{
+    color: #EFAB1F;
+}
+
+.columnTasks {
+    flex-basis: 100%;
+    height: 500px;
+}
+
+.columnTasks h1{
+    font-size: 150%;
+    font-weight: 700;
+    margin:0;
+    margin-top: 50px;
+}
+
+.columnTasks h2{
+    text-align: left;
+	font-size: 95%;
+    margin-top: 15px;
+    font-weight: 400;
+    color: #717171;
+    max-width: 40%;
+}
+
+.columnTasks a{
+    font-size: 90%;
+    text-decoration: underline;
+    font-style: italic;
+    color: #000;
+    transition: 0.3s;
+}
+.columnTasks a:hover{
+    color: #EFAB1F;
+}
+
+.columnTasks img{
+    height: 15px;
+    padding: 2px;
+}
+
+#columnUp1{
+    width: 50%;
+    height: 250px;
+    margin: 0;
+}
+#columnUp2{
+    width: 50%;
+    height: 250px;
+    margin: 0;
+}
+#columnDown1{
+    width: 50%;
+    height: 250px;
+    margin: 0;
+}
+#columnDown2{
+    width: 50%;
+    height: 250px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.privacy{
+    height: 1200px;
+    width: 90%;
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    
+}
 
 
 
@@ -788,7 +1011,22 @@ strong{
     .preheader{
         display: none;
     }
-
+    .navbar{
+        position: fixed;
+        background: #fff;
+    }
+    .firsttext{
+        margin-left: auto;
+        width: 50%;
+    }
+    .firsttext p{
+        max-width: 100%;
+    }
+    .header{
+        background-image: none;
+        background: #fff;
+        height: 550px;
+    }
     .logo{
         width: 80%;
     }
@@ -807,8 +1045,8 @@ strong{
 	.column{
 		 height: 375px;
 	}
-	.products{
-		height: 1180px;
+	.section2{
+		height: 800px;
 	}
 	.autColumn{
 		height: 250px;
@@ -834,6 +1072,48 @@ strong{
     .linkCopyright{
         margin: 0 20px;
         float: none;
+    }
+    .chevron {
+        margin: 0 auto;
+    }
+    .button {
+        margin-bottom: 5px;
+    }
+    .section3{
+        height: auto;
+    }
+    .chisiamo {
+        height: auto;
+    }
+    .chisiamo h2{
+        margin: 30px 20px;
+        text-align: center;
+    }
+    .chisiamo h3{
+        text-align: center;
+        margin: 30px 20px;
+    }
+    .obbiettivi{
+        height: 430px;
+    }
+    #rightColumn{
+        display: none;
+    }
+    #leftColumn h1{
+        margin: 30px 20px 10px;
+        text-align: center;
+    }
+    #leftColumn h2{
+        margin: 10px auto;
+        text-align: center;
+        max-width: 45%;
+    }
+    #leftColumn a{
+        display: block;
+        margin: 0 150px;
+    }
+    .imgTask{
+        margin: 0 auto;
     }
 }
 
@@ -934,121 +1214,19 @@ strong{
 }
 
 
-/*----------Animations----------*/
 
-@-webkit-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 20%, 0);
-        transform: translate3d(0, 20%, 0);
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0) rotate(45deg);
     }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+    50% {
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px) rotate(45deg);
     }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 20%, 0);
-        transform: translate3d(0, 20%, 0);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0) rotate(45deg);
     }
 }
-
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
-/*--------------------------------------------------------------*/
-
-@-webkit-keyframes fadeOutUp {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
-    }
-}
-  
-@keyframes fadeOutUp {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
-    }
-}
-  
-.fadeOutUp {
-    -webkit-animation-name: fadeOutUp;
-    animation-name: fadeOutUp;
-}
-
-/*--------------------------------------------------------------*/
-
-
-@-webkit-keyframes bounceOutRight {
-    20% {
-      opacity: 1;
-      -webkit-transform: translate3d(-20px, 0, 0);
-      transform: translate3d(-20px, 0, 0);
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(2000px, 0, 0);
-      transform: translate3d(2000px, 0, 0);
-    }
-  }
-  
-  @keyframes bounceOutRight {
-    20% {
-      opacity: 1;
-      -webkit-transform: translate3d(-20px, 0, 0);
-      transform: translate3d(-20px, 0, 0);
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(2000px, 0, 0);
-      transform: translate3d(2000px, 0, 0);
-    }
-  }
-  
-  .bounceOutRight {
-    -webkit-animation-name: bounceOutRight;
-    animation-name: bounceOutRight;
-  }
-  
-
-
-
-@keyframes upPosition {
-    from {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-    
-    to {
-        opacity: 0;
-        -webkit-transform: translate3d(0,-100px , 0);
-        transform: translate3d(0, -100px, 0);
-      }
-    }

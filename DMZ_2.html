@@ -8,10 +8,17 @@
     
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
 	
 </head>
 <body>
+
+    <div class="scrolltotop" id="up">
+        <div class="chevronUp"></div>
+    </div>
 
     <div class="preheader" id="preheader">
         <div class="phone"><img src="img/phone.png" alt="Phone" id="img1">
@@ -22,32 +29,34 @@
         </div>
     </div>
     
-    <div class="navbar" id="navbar">
-        <div class="logo"></div>
-        <div class="menu">
-                <ul>
-                    <li><a href="#preheader" >Home</a></li>
-                    <li><a href="#products">Prodotti</a></li>
-                    <li><a href="#section2">Storia</a></li>
-                    <li><a href="#section3">Text 4</a></li>
-                </ul>
-            </div>
-        
-            <div class="toggle" id="toggle">
-            <ul class="burger" id="burger"> 
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul> 
-        </div> 
-        </div>   
+    
 
+    <div class="header" > 
+            <div class="navbar" id="navbar">
+                    <div class="logo"></div>
+                    <div class="menu">
+                            <ul>
+                                <li><a href="#preheader" >Home</a></li>
+                                <li><a href="#products">Prodotti</a></li>
+                                <li><a href="#section2">About</a></li>
+                                <li><a href="#section3">Lavori</a></li>
+                                <li><a href="#section4">Contattaci</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="toggle" id="toggle">
+                        <ul class="burger" id="burger"> 
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul> 
+                    </div> 
+                    </div>   
 
-    <div class="coverheader"></div>
-    <div class="header">
-        <div class="firsttext">
+        <div class="firsttext" >
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
             <a href="#" class="button">Link Button</a>
+            <div class="chevron"></div>
         </div> 
     </div>
 
@@ -77,7 +86,7 @@
 		</div>
 	</div>
 	
-	<div class="products">
+	<div class="section2">
 		<div class="row">
   			<div class="autColumn" id="autColumn1">
   			</div>
@@ -88,21 +97,89 @@
 					<a href="#" class="button">Link Button</a>
 				</div>
   			</div>
-		</div>
-		<!--<div class="row">
-  			<div class="autColumn" id="autColumn3">
-				<div class="textProducts">
-					<h1>TITLE TEXT</h1>
-					<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit</h2>
-					<a href="#" class="button">Link Button</a>
-				</div>
-  			</div>
-			<div class="autColumn" id="autColumn4">
-				
-  			</div>
-		</div>-->
-		
-	</div>
+		</div>		
+    </div>
+    
+
+    <div class="section3">
+        <div class="chisiamo">
+                <h1>Chi siamo</h1>
+                <h2>
+                    <strong>DMZ Technology</strong> Primo, secondo, terzo
+                </h2>
+                <h3>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit! 
+                    <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+                    <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+                </h3>
+        </div>
+        <div class="obbiettivi">
+            <div class="row">
+                <div class="column" id="leftColumn">
+                    <h1>I nostri <br>
+                        obbiettivi
+                    </h1>
+                    <div class="imgTask"><img src="img/objective.png"></div>
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+                            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit! Lorem, ipsum dolor sit amet consectetur adipisicing elit!
+                    </h2>
+                    <a href="">view more</a>
+                </div>
+                <div class="column" id="rightColumn">
+                        <div class="row">
+                                <div class="columnTasks" id="columnUp1">
+                                    <h1><img src="img/right-arrow.png" alt="Arrow">Obbiettivo 1</h1>
+                                    <h2>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                    </h2>
+                                    <a href="">view more</a>
+                                </div>
+                                <div class="columnTasks" id="columnUp2">
+                                    <h1><img src="img/right-arrow.png" alt="Arrow">Obbiettivo 2</h1>
+                                    <h2>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                    </h2>
+                                    <a href="">view more</a>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="columnTasks" id="columnDown1">
+                                    <h1><img src="img/right-arrow.png" alt="Arrow">Obbiettivo 3</h1>
+                                    <h2>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                    </h2>
+                                    <a href="">view more</a>
+                                </div>
+                                <div class="columnTasks" id="columnDown1">
+                                    <h1><img src="img/right-arrow.png" alt="Arrow">Obbiettivo 4</h1>
+                                    <h2>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                        <li>Text</li>
+                                    </h2>
+                                    <a href="">view more</a>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
   
     <div class="footer">
         <div class="row">
@@ -236,6 +313,29 @@
         }
     }
 </script>	
-	
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+        AOS.init();
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){ 
+    
+       $(window).scroll(function(){
+           if ($(this).scrollTop() > 250) {
+               $('.scrolltotop').fadeIn();
+           } 
+           else {
+               $('.scrolltotop').fadeOut();
+           }
+    }); 
+    $('.scrolltotop').click(function(){
+           $("html, body").animate({ scrollTop: 0 }, 800);
+           return false;
+           });
+    });
+</script>
 
 </html>
