@@ -10,25 +10,26 @@ body,html {
 
 .scrolltotop{
     position: fixed;
-    width: 50px;
-    height: 50px;
+    display: none;
+    width: 40px;
+    height: 40px;
     background: #035096;
     z-index: 5000;
     left: auto;
-    right: 40px;
-    bottom: 40px;
+    right: 50px;
+    bottom: 50px;
     cursor: pointer;
     opacity: 0.6;
-    border-radius: 30%;
+    border-radius: 100%;
     transition: 0.3s;
 }
 
 .chevronUp {
     border-left: 2px solid #EFAB1F;
     border-top: 2px solid #EFAB1F;
-    width: 10px; height: 10px;
+    width: 8px; height: 8px;
     transform: rotate(45deg);
-    margin: 22px auto;
+    margin: 18px auto;
     cursor: pointer;
 }
 
@@ -112,9 +113,9 @@ body,html {
 
 .header {
     width: 100%;
-    height: 600px;
+    height: 650px;
     position: relative;
-    background: url(img/bg_header5.jpg) no-repeat center center fixed;
+    background: url(img/azienda.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -125,8 +126,8 @@ body,html {
 .firsttext{
     width: 40%;
     height: 300px;
-    top: 20%;
-    margin-left: 20px;
+    top: 10%;
+    margin-left: 150px;
     margin-right: auto;
     position: relative;
 }
@@ -155,7 +156,7 @@ body,html {
     margin: 15px auto;
     display:block;
 	transition: 0.3s;
-   /* -webkit-box-shadow: 1px 1px 1px #EFAB1F;
+    /*-webkit-box-shadow: 1px 1px 1px #EFAB1F;
             box-shadow: 1px 1px 1px #EFAB1F;*/
 }
 .button:hover {
@@ -166,15 +167,36 @@ body,html {
 			box-shadow: 1px 1px 1px #103754;*/
 }
 
+.firsttext h1{
+    font-size: 15px;
+    font-weight: 300;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3px;
+    color: #F19436;
+    animation: pulse2 2s infinite;
+    cursor: pointer;
+}
+
+.firsttext h1:hover{
+    color: #035096;
+}
 
 .chevron {
     border-right: 2px solid #035096;
     border-bottom: 2px solid #035096;
-    width: 30px; height: 30px;
+    width: 22px; height: 22px;
     transform: rotate(-225deg);
-    margin: 20px auto;
+    margin: 0px auto;
     cursor: pointer;
     animation: pulse 2s infinite;
+    transition: 0.3s;
+}
+
+.chevron:hover{
+    border-right: 2px solid #F19436;
+    border-bottom: 2px solid #F19436;
 }
 
 
@@ -189,21 +211,20 @@ body,html {
     transition: 0.3s;
 }
 
-/*.scrolledNav {
-    background-color: #c8c8c8cc;
+.scrolledNav {
     transition: 0.3s;
     /*box-shadow: 0px 3px 5px #EFAB1F;
     border-bottom: 2px solid #EFAB1F;
-    top: 0px;
+    top: 0px;*/
 }
-*/
+
 
 .logo {
     height: 100px;
     width: 350px;
     position: absolute;
     float: left;
-    left: 80px;
+    left: 120px;
     background: url(img/LogoDMZ.png);
     background-position: center center;
     background-size: contain;
@@ -445,6 +466,8 @@ body,html {
     border: 2px solid #EFAB1F;
 }
 
+
+
 /*---------Sezione 3--------*/
 
 .section3{
@@ -570,6 +593,7 @@ body,html {
     font-weight: 700;
     margin:0;
     margin-top: 50px;
+    color: #000;
 }
 
 .columnTasks h2{
@@ -788,65 +812,28 @@ strong{
 .copyright {
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background: #035096;
 }
 
 .DMZCopyright {
     position: relative;
     float: left;
-    height: 100px;
+    height: 50px;
     margin-left: 80px;
 }
 
 .DMZCopyright p{
     text-align: center;
-    line-height: 100px;
+    line-height: 50px;
     color: #EFAB1F;
     font-size: 15px;
     margin: 0;
 }
 
-.linkCopyright {
-    position: relative;
-    float: right;
-    height: 100px;
-    margin-right: 80px;
-}
-
-.linkCopyright a{
-    text-align: center;
-    line-height: 100px;
+.DMZCopyright strong{
     color: #EFAB1F;
-    text-decoration: underline;
-    font-size: 15px;
-    margin: 0 15px;
-    transition: 0.3;
 }
-
-.linkCopyright #ZMDesign{
-    font-size: 12px;
-    font-weight: bold;
-    color: #717171;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.linkCopyright a:hover {
-    color: rgb(255, 193, 68);
-}
-
-.linkCopyright #ZMDesign:hover{
-    color: #DE041F;
-    border-top: 1px solid #DE041F;
-    border-bottom: 1px solid #DE041F;
-}
-
-
-
-
-
-
 
 /*---------Burger Menu--------*/
 
@@ -915,8 +902,9 @@ strong{
 .responsiveMenu {
     position: fixed;
     width: 100%;
-    height: 280px;
-    background: #ffffffec;
+    height: 340px;
+    background: #fff;
+    opacity: 0.9;
     top: 100px;
     display: none;
     z-index: 100;
@@ -932,11 +920,12 @@ strong{
     list-style: none;
     padding: 0;
     position: relative;
+    overflow: scroll;
 }
 
 .responsiveMenu li a{
     font-size: 25px;
-	color: #000;
+	color: #035096;
     padding: 20px;
     display: block;
     text-decoration: none;
@@ -947,10 +936,8 @@ strong{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; 
 }
-
-.responsiveMenu li a:hover{
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+.responsiveMenu li a:active{
+    color: #F19436;
 }
 
 .responsiveMenu.active {
@@ -1013,19 +1000,25 @@ strong{
     }
     .navbar{
         position: fixed;
-        background: #fff;
+        background: transparent;
+    }
+    .scrolledNav{
+        position: fixed;
+        background: white;
+        opacity: 0.9;
     }
     .firsttext{
         margin-left: auto;
-        width: 50%;
+        width: 95%;
+        top: 18%;
     }
     .firsttext p{
         max-width: 100%;
     }
     .header{
-        background-image: none;
-        background: #fff;
-        height: 550px;
+        background: url(img/aziendaSmart.jpg) no-repeat fixed;
+        width: 100%;
+        height: 600px;
     }
     .logo{
         width: 80%;
@@ -1063,15 +1056,11 @@ strong{
         margin: 0;
     }
     .copyright{
-        height: 200px;
+        height: auto;
     }
     .DMZCopyright{
         float: none;
         margin-left: auto;
-    }
-    .linkCopyright{
-        margin: 0 20px;
-        float: none;
     }
     .chevron {
         margin: 0 auto;
@@ -1115,6 +1104,10 @@ strong{
     .imgTask{
         margin: 0 auto;
     }
+    .scrolltotop{
+        right: 20px;
+        bottom: 30px;
+    }
 }
 
 /*--Smartphone Horizontal--*/
@@ -1138,7 +1131,6 @@ strong{
     .preheader{
         display: none;
     }
-
     .logo{
         width: 80%;
     }
@@ -1153,7 +1145,12 @@ strong{
 	}
 	.responsiveMenu li a{
     	font-size: 15px;
-	}
+    }
+    .firsttext{
+        margin-left: auto;
+        width: 95%;
+        top: 18%;
+    }
 }
 
 
@@ -1228,5 +1225,21 @@ strong{
     100% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0) rotate(45deg);
+    }
+}
+
+
+@keyframes pulse2 {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }

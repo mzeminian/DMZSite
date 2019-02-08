@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DMZ Technology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	
+    	
 </head>
 <body>
 
-    <div class="scrolltotop" id="up">
+    <div class="scrolltotop" onclick="topFunction()" id="up">
         <div class="chevronUp"></div>
     </div>
 
@@ -38,9 +37,9 @@
                             <ul>
                                 <li><a href="#preheader" >Home</a></li>
                                 <li><a href="#products">Prodotti</a></li>
-                                <li><a href="#section2">About</a></li>
-                                <li><a href="#section3">Lavori</a></li>
-                                <li><a href="#section4">Contattaci</a></li>
+                                <li><a href="#section3">Chi siamo</a></li>
+                                <li><a href="#section2">Lavori</a></li>
+                                <li><a href="#footer">Contattaci</a></li>
                             </ul>
                         </div>
                     
@@ -55,8 +54,9 @@
 
         <div class="firsttext" >
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
-            <a href="#" class="button">Link Button</a>
-            <div class="chevron"></div>
+            <!--<a href="#" class="button">Link Button</a>-->
+            <h1 onclick="window.location.href='#products'">scopri di più</h1>
+            <div class="chevron" onclick="window.location.href='#products'"></div>
         </div> 
     </div>
 
@@ -101,7 +101,7 @@
     </div>
     
 
-    <div class="section3">
+    <div class="section3" id="section3">
         <div class="chisiamo">
                 <h1>Chi siamo</h1>
                 <h2>
@@ -181,7 +181,7 @@
 
 
   
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="row">
             <div class="footerColumn">
                 <h1>DMZ TECHNOLOGY</h1>
@@ -197,9 +197,11 @@
                     <br>
                 </h2>
                 <a href="">Privacy policy</a>
+                <br><a href="">Area clienti</a>
+                <br><a href="">Credits: ZM Design</a>
             </div>
             <div class="footerColumn">
-                <h1>&nbsp</h1>
+                <h1>Contatti</h1>
                 <h2>
                     <div class="positionFooter"><img src="img/mapsIcon.png" alt="Phone" id="img1">
                         <textFooter id="textFooter">Via Perara 131, Orgiano, Vicenza, Italia</textFooter>  
@@ -223,12 +225,8 @@
 
     <div class="copyright">
         <div class="DMZCopyright">
-            <p>© 2019 DMZ Technology, all rights reserved.</p>
+           <p><strong>2019 DMZ Technology s.a.s.</strong>| © Copyright | All rights reserved.</p>
         </div>
-        <div class="linkCopyright">
-                <a href="">Area Clienti</a>
-                <a href="" id="ZMDesign">Designed by ZM Design</a>
-            </div>
     </div>
     
 
@@ -239,10 +237,11 @@
 
     <div class="responsiveMenu" id="menuResp">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Prodotti</a></li>
-            <li><a href="">Storia</a></li>
-            <li><a href="">Contattaci</a></li>
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#products">Prodotti</a></li>
+            <li><a href="#section3">Chi siamo</a></li>
+            <li><a href="">Lavori</a></li>
+            <li><a href="#footer">Contattaci</a></li>
         </ul>
     </div>
 	    
@@ -320,22 +319,22 @@
 </script>
 
 
-<script type="text/javascript">
-    $(document).ready(function(){ 
-    
-       $(window).scroll(function(){
-           if ($(this).scrollTop() > 250) {
-               $('.scrolltotop').fadeIn();
-           } 
-           else {
-               $('.scrolltotop').fadeOut();
-           }
-    }); 
-    $('.scrolltotop').click(function(){
-           $("html, body").animate({ scrollTop: 0 }, 800);
-           return false;
-           });
-    });
+<script>
+    window.onscroll= function() {scrollFunction(); navbarScroll()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)  {
+            document.getElementById("up").style.display="block";
+        } else {
+            document.getElementById("up").style.display="none";
+        }
+    }
+
+// When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
 </script>
 
 </html>
