@@ -19,39 +19,43 @@
         <div class="chevronUp"></div>
     </div>
 
-    <div class="preheader" id="preheader">
-        <div class="phone"><img src="img/phone.png" alt="Phone" id="img1">
-            <a href="tel:+390123456789">+39012345678</a>  
+   
+    
+
+    <div class="header">
+        <div class="preheader" id="preheader">
+            <div class="phone"><img src="img/phone.png" alt="Phone" id="img1">
+                <a href="tel:+390123456789">+39012345678</a>  
+            </div>
+            <div class="mail"><img src="img/email.png" alt="Mail" id="img2">
+                <a href="mailto:info@dmztechnology.it">info@dmztechnology.it</a> 
+            </div>
         </div>
-        <div class="mail"><img src="img/email.png" alt="Mail" id="img2">
-            <a href="mailto:info@dmztechnology.it">info@dmztechnology.it</a> 
-        </div>
+        
+        <div class="navbar" id="navbar">
+            <div class="logo" id="logo"></div>
+               <div class="menu" id="menu">
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#products">Prodotti</a></li>
+                        <li><a href="#section3">Chi siamo</a></li>
+                        <li><a href="#section2">Lavori</a></li>
+                        <li><a href="#footer">Contatti</a></li>
+                    </ul>
+                </div>
+                        
+                <div class="toggle" id="toggle">
+                    <ul class="burger" id="burger"> 
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul> 
+               </div> 
+         </div>   
     </div>
     
-    
 
-    <div class="header" > 
-            <div class="navbar" id="navbar">
-                    <div class="logo"></div>
-                    <div class="menu">
-                            <ul>
-                                <li><a href="#preheader" >Home</a></li>
-                                <li><a href="#products">Prodotti</a></li>
-                                <li><a href="#section3">Chi siamo</a></li>
-                                <li><a href="#section2">Lavori</a></li>
-                                <li><a href="#footer">Contattaci</a></li>
-                            </ul>
-                        </div>
-                    
-                        <div class="toggle" id="toggle">
-                        <ul class="burger" id="burger"> 
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul> 
-                    </div> 
-                    </div>   
-
+    <div class="pagePresentazione" > 
         <div class="firsttext" >
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
             <!--<a href="#" class="button">Link Button</a>-->
@@ -196,23 +200,23 @@
                      M5MCSM43
                     <br>
                 </h2>
-                <a href="">Privacy policy</a>
+                <a href="privacy.html" target="_blank">Privacy policy</a>
                 <br><a href="">Area clienti</a>
                 <br><a href="">Credits: ZM Design</a>
             </div>
             <div class="footerColumn">
                 <h1>Contatti</h1>
                 <h2>
-                    <div class="positionFooter"><img src="img/mapsIcon.png" alt="Phone" id="img1">
+                    <div class="positionFooter"><img src="img/mapsIcon.png" alt="MapsIcon" id="img1">
                         <textFooter id="textFooter">Via Perara 131, Orgiano, Vicenza, Italia</textFooter>  
                     </div>
-                    <div class="orariFooter"><img src="img/orariIcon.png" alt="Phone" id="img1">
+                    <div class="orariFooter"><img src="img/orariIcon.png" alt="OrariIcon" id="img1">
                         <textFooter id="textFooter">Lun-Ven | 8:30-13:00 | 14:30-18:00</textFooter>  
                     </div>
                     <div class="phoneFooter"><img src="img/phoneB.png" alt="Phone" id="img1">
                         <a href="tel:+390123456789" id="textFooterLink">+39012345678</a>  
                     </div>
-                    <div class="mailFooter"><img src="img/mailB.png" alt="Phone" id="img1">
+                    <div class="mailFooter"><img src="img/mailB.png" alt="Mail" id="img1">
                         <a href="mailto:info@dmztechnology.it" id="textFooterLink">info@dmztechnology.it</a>  
                     </div>
                 </h2>
@@ -261,16 +265,20 @@
     window.onscroll = function() { navbarScroll(); preHeaderScroll();};
     function navbarScroll(){
     var element = document.getElementById("navbar");
-        if(window.pageYOffset > 50){
+        if(window.pageYOffset > 20){
             if (element.className == "navbar"){
                 element.className += " scrolledNav";
-            }   
+                document.getElementById("menu").style.paddingTop="5px";
+                document.getElementById("logo").className += " logoMiniature";
+            }
             else{
                 return element;
             }  
         }
         else{
             element.className = "navbar";
+            document.getElementById("logo").className = "logo";
+            document.getElementById("menu").style.paddingTop="25px";
         }
         console.log("lol "+window.pageYOffset);
     } 
