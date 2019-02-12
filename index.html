@@ -11,16 +11,27 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css"/>
-    	
+    
+    <script type="text/javascript">
+        window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', 'd9fbcd6e26a742423b09e8cea1fa8f01ebe17d41');
+    </script>
+
 </head>
 <body>
 
+    
+    <!--Scroll to top-->
     <div class="scrolltotop" onclick="topFunction()" id="up">
         <div class="chevronUp"></div>
     </div>
 
    
-    
+    <!--Header-->
 
     <div class="header">
         <div class="preheader" id="preheader">
@@ -33,7 +44,7 @@
         </div>
         
         <div class="navbar" id="navbar">
-            <div class="logo" id="logo"></div>
+            <div class="logo" id="logo" onclick="window.location.href='index.html'"></div>
                <div class="menu" id="menu">
                     <ul>
                         <li><a href="index.html" >Home</a></li>
@@ -54,6 +65,7 @@
          </div>   
     </div>
     
+    <!--Prima parte-->
 
     <div class="pagePresentazione" > 
         <div class="firsttext" >
@@ -64,6 +76,7 @@
         </div> 
     </div>
 
+    <!--Sezione 1-->
 
     <div class="pageProdotti" id="products">
 		<h1>I nostri prodotti</h1>
@@ -89,7 +102,9 @@
   			</div>
 		</div>
 	</div>
-	
+    
+    <!--Sezione 2-->
+
 	<div class="section2">
 		<div class="row">
   			<div class="autColumn" id="autColumn1">
@@ -104,6 +119,8 @@
 		</div>		
     </div>
     
+
+    <!--Chi Siamo-->
 
     <div class="section3" id="section3">
         <div class="chisiamo">
@@ -181,9 +198,7 @@
         </div>
     </div>
 
-
-
-
+    <!--Footer-->
   
     <div class="footer" id="footer">
         <div class="row">
@@ -233,11 +248,7 @@
         </div>
     </div>
     
-
-
-
-
-
+    <!--Menu Responsive-->
 
     <div class="responsiveMenu" id="menuResp">
         <ul>
@@ -249,16 +260,16 @@
         </ul>
     </div>
 	    
-    <!--<div class="rightSquares">
-            <ul id="rightSquares">
-                <li class="li"><a href="#header"></a></li>
-                <li class="li"><a href="#section1"></a></li>
-                <li class="li"><a href="#section2"></a></li>
-                <li class="li"><a href="#section3"></a></li>
-            </ul>
-        </div>-->
+   
 
 </body>
+
+
+
+<!--
+    SCRIPT
+-->
+
 
 <!--navbarScrollColor-->
 <script>
@@ -321,10 +332,6 @@
     }
 </script>	
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-        AOS.init();
-</script>
 
 
 <script>
@@ -338,10 +345,9 @@
         }
     }
 
-// When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0; 
     }
 </script>
 
