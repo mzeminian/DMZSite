@@ -286,7 +286,7 @@ body,html {
     width: 100%;
     position: relative;
     background: #f4f6f7;
-
+    z-index: 1;
 }
 
 .pageProdotti h1{
@@ -295,11 +295,19 @@ body,html {
 	font-size: 240%;
 	padding-top: 30px;
 	margin: 0;
-	color: #035096;
+    color: #035096;
+    z-index: 0;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;	
+}
+
+.pageProdotti .underline{
+    width: 271px;
+    height: 8px;
+    z-index: -1;
+    margin: 0 auto;
 }
 
 .pageProdotti h2{
@@ -442,7 +450,7 @@ body,html {
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
-	        user-select: none;
+            user-select: none;
 }
 
 .textProducts h2 {
@@ -495,6 +503,7 @@ body,html {
     width: 100%;
     position: relative;
     margin: 50px 0; 
+    z-index: 1;
 }
 
 .chisiamo{
@@ -503,6 +512,13 @@ body,html {
     position: relative;
     background-color: #f4f6f7;
     border-bottom: 1px solid #b6b6b6;
+}
+
+.chisiamo .underline{
+    width: 167px;
+    height: 8px;
+    z-index: 0;
+    margin: 0 auto;
 }
 
 .obbiettivi{
@@ -522,7 +538,7 @@ body,html {
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
-	        user-select: none;	
+            user-select: none;	      
 }
 
 .chisiamo h2{
@@ -568,6 +584,16 @@ body,html {
     margin: 30px 150px 5px;
     letter-spacing: 3px;
     color: #035096;
+}
+
+.underline{
+    display: block;
+    width: 237px;
+    height: 8px;
+    background: #FF9E29;
+    bottom: 5px;
+    z-index: -1;
+    position: relative;
 }
 
 .imgTask{
@@ -1191,6 +1217,9 @@ strong{
     }*/
     .privacy{
         top: 101px;
+    }
+    .obbiettivi .underline{
+        margin: 0 auto;
     }
 }
 
