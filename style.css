@@ -202,24 +202,44 @@ body,html {
     /*box-shadow: inset 0 0 0 1000px #00000085;*/
 }
 
+#leftline {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 8px;
+    background: #F19436;
+    margin: 97px 0;
+}
+
+#rightline {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 8px;
+    background: #F19436;
+    margin: 97px 0;
+    right: 0;
+}
+
 .firsttext{
-    width: 40%;
-    height: 300px;
-    top: 22%;
-    margin-left: 150px;
-    margin-right: auto;
+    width: 100%;
+    height: 200px;
+    top: 35%;
+    margin: 0 auto;
     position: relative;
+    background: #035096;
+    opacity: 0.8;
 }
 
 .firsttext p{
     font-size: 240%;
     text-align: center;
-    max-width: 70%;
+    max-width: 40%;
+    margin-top: 10px;
     margin: auto;
    /*color: #035096;*/
-	color: #035096;
-   /* text-shadow: 1px 1px 1px #495866;*/
-    
+	color: #fff;
+   /* text-shadow: 1px 1px 1px #495866;*/    
 }
 
 .button {
@@ -248,23 +268,24 @@ body,html {
 
 .firsttext h1{
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 700;
     color: grey;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 3px;
     color: #F19436;
-    animation: pulse2 2s infinite;
+   /* animation: pulse2 2s infinite;*/
     cursor: pointer;
+    width: 120px;
+    margin: 30px auto 0;
 }
 
 .firsttext h1:hover{
-    color: #035096;
+    color: #fff;
 }
 
 .chevron {
-    border-right: 2px solid #035096;
-    border-bottom: 2px solid #035096;
+    border-right: 4px solid #F19436;
+    border-bottom: 4px solid #F19436;
     width: 22px; height: 22px;
     transform: rotate(-225deg);
     margin: 0px auto;
@@ -274,8 +295,8 @@ body,html {
 }
 
 .chevron:hover{
-    border-right: 2px solid #F19436;
-    border-bottom: 2px solid #F19436;
+    border-right: 4px solid #F19436;
+    border-bottom: 4px solid #F19436;
 }
 
 
@@ -1095,12 +1116,22 @@ strong{
         top: 0;
     }
     .firsttext{
-        margin-left: auto;
-        width: 95%;
-        top: 18%;
+        width: 100%;
+        height: 300px;
+        top: 22%;
+    }
+    #leftline {
+        width: 6px;
+        height: 200px;
+        margin: 50px 0;
+    }
+    #rightline {
+        width: 6px;
+        height: 200px;
+        margin: 50px 0;
     }
     .firsttext p{
-        max-width: 100%;
+        max-width: 95%;
     }
     .pagePresentazione{
         background: url(img/aziendaSmart.jpg) no-repeat fixed;
